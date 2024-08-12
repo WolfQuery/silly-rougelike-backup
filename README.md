@@ -1,7 +1,7 @@
 # Silly Rougelike
 *(v0.1)*
 ---
-## Roadpath
+## Roadmap
 ---
 ### ASAP:
 - get the alpha running
@@ -17,6 +17,9 @@
 - add more enemies
 - add LORE
 ---
+## Known bugs:
+_too soon for bugs_
+---
 
 ## LORE:
 *theres nothing here yet :(*
@@ -28,4 +31,6 @@
 - added a simple character controller
 - added a very basic main menu with a scene change animation
 - started working on procedural generation
+- procedural generation working almost
+    - must fix walls not appearing
 ---

@@ -1,4 +1,4 @@
-class_name LoadingScreen extends Node
+class_name CustomLoadingScreen extends Node
 
 ## Used by scene manager to display transitions and loading progress. You won't need to
 ## modify or work with any of the code in this class but I've annotated in case

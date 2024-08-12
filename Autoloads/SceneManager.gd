@@ -45,7 +45,7 @@ signal _content_invalid(content_path:String)	## internal - triggered when attemp
 signal _content_failed_to_load(content_path:String)	## internal - triggered when loading has started but failed to complete
 
 var _loading_screen_scene:PackedScene = preload("res://Menus/loading_canvass.tscn")	## reference to loading screen PackedScene, if you don't want the loading screen to ALWAYS be on top and instead want more granular control, instead preload loading_screen and then use the signals above to reposition nodes as needed
-var _loading_screen:LoadingScreen	## internal - reference to loading screen instance
+var _loading_screen:CustomLoadingScreen	## internal - reference to loading screen instance
 var _transition:String	## internal - transition being used for current load
 var _zelda_transition_direction:Vector2	## internal - direction of zelda transition (should only be passed Vector2.UP/RIGHT/DOWN/LEFT) Is passed in when calling [code]swap_scenes_zelda()[/code]
 var _content_path:String	## internal - stores the path to the asset SceneManager is trying to load
@@ -83,7 +83,7 @@ func _add_loading_screen(transition_type:String="fade_to_black"):
 	# An alternative would be to store strating animations in a dictionary and swap them for the animation name
 	# it removes this one-off, but adds a step elsewhere - all about preference.
 	_transition = "no_to_transition" if transition_type == "no_transition" else transition_type
-	_loading_screen = _loading_screen_scene.instantiate() as LoadingScreen
+	_loading_screen = _loading_screen_scene.instantiate() as CustomLoadingScreen
 	get_tree().root.add_child(_loading_screen)
 	_loading_screen.start_transition(_transition)
 	

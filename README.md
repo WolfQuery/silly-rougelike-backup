@@ -18,4 +18,4 @@
 ---
 
 ## LORE:
-**theres nothing here yet :(**
+*theres nothing here yet :(*

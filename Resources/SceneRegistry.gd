@@ -10,5 +10,6 @@ const main_scenes = {
 }
 
 const levels = {
-	"game_start" : "res://Gameplay/Levels/Level01.tscn"
+	"game_start": "res://Gameplay/Levels/Level01.tscn",
+	"developer_testing": "res://Gameplay/Levels/Level00.tscn"
 }

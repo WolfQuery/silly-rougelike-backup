@@ -9,7 +9,7 @@ func _ready() -> void:
 	version_num.text = "v%s" % template_version
 
 func _on_start_button_up() -> void:
-	SceneManager.swap_scenes(SceneRegistry.levels["game_start"],get_tree().root,self,"wipe_to_right")	
+	SceneManager.swap_scenes(SceneRegistry.levels["developer_testing"],get_tree().root,self,"wipe_to_right")	
 
 func _on_settings_button_up() -> void:
 	Globals.open_settings_menu()

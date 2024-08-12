@@ -1,4 +1,5 @@
 # Silly Rougelike
+*(v0.1)*
 ---
 ## Roadpath
 ---
@@ -19,3 +20,12 @@
 
 ## LORE:
 *theres nothing here yet :(*
+
+# Devlogs
+---
+#### Devlog 1 *(12.8.2024)*
+- Begun work on the rougelike/rougelite
+- added a simple character controller
+- added a very basic main menu with a scene change animation
+- started working on procedural generation
+---

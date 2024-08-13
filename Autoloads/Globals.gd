@@ -54,3 +54,7 @@ func open_settings_menu():
 		get_tree().root.add_child(settings_menu)
 	else:
 		push_warning('settings menu already exists in this scene')
+		
+# Player seeting variables (health, speed, upgrades, stamina etc.)
+@onready var HEALTH: int = 5
+@onready var SPEED: float = 200.0

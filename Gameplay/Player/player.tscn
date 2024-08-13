@@ -6,7 +6,7 @@
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_v3xkf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5pn8"]
-size = Vector2(15.5, 21)
+size = Vector2(8, 10)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_81yvr"]
 
@@ -20,17 +20,15 @@ ease = 2
 script = ExtResource("1_jhvay")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-7.75, -11.5)
 shape = SubResource("RectangleShape2D_u5pn8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-8, -11.5)
-scale = Vector2(16, 21)
+scale = Vector2(8, 10.5)
 texture = SubResource("PlaceholderTexture2D_81yvr")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-8, -10)
-zoom = Vector2(5, 5)
+zoom = Vector2(3, 3)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D"]
 script = ExtResource("2_tl0ic")
@@ -38,5 +36,5 @@ script = ExtResource("2_tl0ic")
 [node name="PhantomCamera2D" type="Node2D" parent="."]
 position = Vector2(-8, -10)
 script = ExtResource("3_nf2p2")
-zoom = Vector2(5, 5)
+zoom = Vector2(3, 3)
 tween_resource = SubResource("Resource_7plv1")

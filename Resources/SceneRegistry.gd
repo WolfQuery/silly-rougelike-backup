@@ -11,5 +11,6 @@ const main_scenes = {
 
 const levels = {
 	"game_start": "res://Gameplay/Levels/Level01.tscn",
-	"developer_testing": "res://Gameplay/Levels/Level00.tscn"
+	"developer_testing": "res://Gameplay/Levels/Level00.tscn",
+	"gaea_experiment": "res://Gameplay/Levels/gaea_experiment.tscn"
 }

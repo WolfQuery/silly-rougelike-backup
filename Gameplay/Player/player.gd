@@ -11,7 +11,7 @@ const JUMP_VELOCITY = -400.0
 #var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 # disabled as game is top down and hopefully wont be needed (prone to change later as this is a quick fix)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = Input.get_vector("left", "right", "up", "down")
 	velocity = direction * speed
 

@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://dodu1p0yafhaw"]
+[gd_scene load_steps=7 format=3 uid="uid://dodu1p0yafhaw"]
 
 [ext_resource type="Script" path="res://Gameplay/Player/player.gd" id="1_jhvay"]
-[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="2_tl0ic"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="3_nf2p2"]
 [ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="4_v3xkf"]
 
@@ -29,9 +28,6 @@ texture = SubResource("PlaceholderTexture2D_81yvr")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(-8, -10)
 zoom = Vector2(3, 3)
-
-[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
-script = ExtResource("2_tl0ic")
 
 [node name="PhantomCamera2D" type="Node2D" parent="."]
 position = Vector2(-8, -10)
